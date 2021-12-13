@@ -1,0 +1,67 @@
+	\begin{frame}{Topic Modelling}
+		
+		\begin{itemize}
+			\item Each topic is a \alert{distribution over words}
+			\item Each document is a \alert{mixture of corpus-wide topics}
+			\item Each word is drawn from one of those topics
+		\end{itemize}
+		\centering
+		\includegraphics[width=.9\textwidth]{topic2.png}
+		
+	\end{frame}
+	
+	
+	
+	\begin{frame}{Topic Modelling}
+		
+		\begin{itemize}
+			\item In reality, we only observe the documents, the other structures are \alert{hidden variables}
+			\item Our goal is to infer the hidden variables, i.e., compute their distribution conditioned on the documents:
+			$$p(\mbox{topics, proportions, assignments}\;|\;\mbox{documents})$$
+		\end{itemize}
+		\begin{figure}
+			\centering
+			\includegraphics[width=.8\textwidth]{topic3.png}
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}{Topic Modelling}
+		
+		%\begin{itemize}
+		%\item
+		Topic modelling allows \alert{exploring} an unknown corpus to
+		\begin{minipage}{.8\textwidth}
+			\vspace{.3cm}
+			\begin{tasks}(2)
+				\task \alert{discover topics} into the corpus
+				\task \alert{tag each document} with topics
+			\end{tasks}
+		\end{minipage}
+		\begin{figure}
+			%\centering
+			\hspace{.4cm}
+			\includegraphics[width=.6\textwidth]{LDA.jpg}
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}{Topic Modelling}
+		%\item
+		Topic modelling can be done on a \alert{large-scale stream} (\emph{e.g.}, of tweets) %~\cite{yang2014large})
+		\begin{figure}
+			%\centering
+			\hspace{.4cm}
+			\includegraphics[width=.7\textwidth]{topic_twitter.pdf}
+		\end{figure}
+		%\end{itemize}
+	\end{frame}
+	
+	\begin{frame}{Topic Modelling}
+		
+		%\begin{itemize}
+		%\item 
+		Topic modelling can be used for \alert{disambiguation} %~\cite{boyd2007topic}
+		\begin{figure}
+			\centering
+			\includegraphics[width=.6\textwidth]{topic_disambiguation.pdf}
+		\end{figure}
+	\end{frame}
