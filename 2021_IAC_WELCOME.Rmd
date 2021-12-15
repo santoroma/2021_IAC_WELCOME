@@ -49,26 +49,26 @@ editor_options:
 
 <small>
 
--   Indexing of Anonimous Networks for Crime Information Search <br>\
+-   <span style="background-color:rgba(0,0,0,.8)">Indexing of Anonimous Networks for Crime Information Search </span><br>\
 
--   We performed a complete crawling of four famous ToR drug
-    marketplaces: Alphabay, Crypto Market, East India and Nucleus <br>\
+-   <span style="background-color:rgba(0,0,0,.8)">We performed a complete crawling of four famous ToR drug
+    marketplaces: Alphabay, Crypto Market, East India and Nucleus </span><br>\
 
--   Marketplaces composed of pages advertising some item for sale and
-    grouped by category <br>\
+-   <span style="background-color:rgba(0,0,0,.8)">Marketplaces composed of pages advertising some item for sale and
+    grouped by category </span><br>\
 
--   We generated a corpus of documents for which covariate information
-    (the market and the category) are immediately available <br>\
+-   <span style="background-color:rgba(0,0,0,.8)">We generated a corpus of documents for which covariate information
+    (the market and the category) are immediately available </span><br>\
 
--   Goals for the IANCIS project:
+-   <span style="background-color:rgba(0,0,0,.8)">Goals for the IANCIS project:
 
-    1.  Understand if there is any difference between markets/categories
+    <span style="background-color:rgba(0,0,0,.8)">1.  <span style="background-color:rgba(0,0,0,.8)">Understand if there is any difference between markets/categories </span>
         <br>\
-    2.  Verify the presence of context-specific idioms and a topical
-        slang <br>\
+    <span style="background-color:rgba(0,0,0,.8)">2.  Verify the presence of context-specific idioms and a topical
+        slang </span><br>\
 
--   Topic Model (TM) can be a natural choice in order to analyze the
-    corpus <br>
+-   <span style="background-color:rgba(0,0,0,.8)">Topic Model (TM) can be a natural choice in order to analyze the
+    corpus </span><br>\
 
 </small>
 
@@ -78,12 +78,13 @@ editor_options:
 
 ## NLP, NLU, NLG {data-background="img/NLP_NLU_NLG.png" data-background-size="contain" data-background-repeat="no-repeat"}
 
+
 <small>
 
-> - <span style="background-color:rgba(0,0,0,.5)">**N**atural **L**anguage **P**rocessing\
+> - <span style="background-color:rgba(0,0,0,.8)">**N**atural **L**anguage **P**rocessing\
 > is  what happens when *computers read* spoken and written languages. \
-**NLP** processes turn *text* into structured data.<br>\ </span>
-> - <span style="background-color:rgba(0,0,0,.5)">**N**atural  **L**anguage **U**nderstanding \
+**NLP** processes turn *text* into structured data. </span><br>\ 
+> - <span style="background-color:rgba(0,0,0,.8)">**N**atural  **L**anguage **U**nderstanding \
 > covers the *human reading* aspects in sense of finding *meanings*.\
   Examples are: \
   *Profanity Filters* (Does this forum posts contain any profanity?)\
@@ -91,51 +92,52 @@ editor_options:
   *Entity Detection* (What locations are referenced in this text message?) \
   *Topic Classification* (What is this corpus about?)  \
 Some times *human reading* needs a mixup of different aspects, e.g. Topic Sentiment Classification <br>\ </span>
-> -  <span style="background-color:rgba(0,0,0,.5)">**N**atural  **L**anguage **G**eneration\
+> -  <span style="background-color:rgba(0,0,0,.8)">**N**atural  **L**anguage **G**eneration\
 > is  what happens when *computers write/spoke* languages.\
 **NLG** turn structured data into text. </span>
 
 </small>
 
 
-# Topic Model Recap  {data-background="img/Presidents.gif"}
+
+# <span style="background-color:rgba(0,0,0,.5)">Topic Model Recap </span> {data-background="img/Presidents.gif"}
 
 
 
 
 
-## <span style="background-color:rgba(0,0,0,.5)">What Topic Models Means for [Wikipedia](https://en.wikipedia.org/wiki/Topic_model) </span>  {data-background="img/TopicModeling01.png" data-background-size="contain" data-background-repeat="no-repeat"}
+## <span style="background-color:rgba(0,0,0,.7)">What Topic Models Means for [Wikipedia](https://en.wikipedia.org/wiki/Topic_model) </span>  {data-background="img/TopicModeling01.png" data-background-size="contain" data-background-repeat="no-repeat"}
 
-> - <span style="background-color:rgba(0,0,0,.5)"> Topic model are statistical models for discovering the abstract *topics* that occur in a collection of documents.
+> - <span style="background-color:rgba(0,0,0,.7)"> Topic model are statistical models for discovering the abstract *topics* that occur in a collection of documents.
 </span>
-> - <span style="background-color:rgba(0,0,0,.5)"> A document typically concerns multiple topics in different proportions; thus, in a document that is 10% about cats and 90% about dogs, there would probably be about 9 times more dog words than cat words.
+> - <span style="background-color:rgba(0,0,0,.7)"> A document typically concerns multiple topics in different proportions; thus, in a document that is 10% about cats and 90% about dogs, there would probably be about 9 times more dog words than cat words.
 </span>
-> - <span style="background-color:rgba(0,0,0,.5)">A topic model captures this intuition in a mathematical framework, which allows examining a set of documents and discovering, based on the statistics of the words in each, what the topics might be and what each document's balance of topics is. 
+> - <span style="background-color:rgba(0,0,0,.7)">A topic model captures this intuition in a mathematical framework, which allows examining a set of documents and discovering, based on the statistics of the words in each, what the topics might be and what each document's balance of topics is. 
 </span>   
     
 
 
 - 
 
-## <span style="background-color:rgba(0,0,0,.5)">What Topic Models Means for [David M. Blei](https://www.cs.princeton.edu/~blei/papers/Blei2012.pdf)</span>  {data-background="img/TopicModeling01.png" data-background-size="contain" data-background-repeat="no-repeat"}
+## <span style="background-color:rgba(0,0,0,.7)">What Topic Models Means for [David M. Blei](https://www.cs.princeton.edu/~blei/papers/Blei2012.pdf)</span>  {data-background="img/TopicModeling01.png" data-background-size="contain" data-background-repeat="no-repeat"}
 
-> - <span style="background-color:rgba(0,0,0,.5)">Topic models can organize the collection according to the discovered themes.</span>
+> - <span style="background-color:rgba(0,0,0,.7)">Topic models can organize the collection according to the discovered themes.</span>
 
-> - <span style="background-color:rgba(0,0,0,.5)">*Probabilistic* topic models are algorithms for discovering the main themes that
+> - <span style="background-color:rgba(0,0,0,.7)">*Probabilistic* topic models are algorithms for discovering the main themes that
 pervade a large and otherwise unstructured collection of documents.</span>
 
-> - <span style="background-color:rgba(0,0,0,.5)">Topic modeling algorithms can be applied to massive collections of documents. Recent advances in this field allow us to
+> - <span style="background-color:rgba(0,0,0,.7)">Topic modeling algorithms can be applied to massive collections of documents. Recent advances in this field allow us to
 analyze streaming collections, like you might find from a Web API.</span>
 
-> - <span style="background-color:rgba(0,0,0,.5)">Topic modeling algorithms can be adapted to many kinds of data. Among
+> - <span style="background-color:rgba(0,0,0,.7)">Topic modeling algorithms can be adapted to many kinds of data. Among
 other applications, they have been used to find patterns in genetic data, images, and social networks.</span>
 
-## <span style="background-color:rgba(0,0,0,.5)">What Topic Models Means for [Me](https://www.linkedin.com/in/mario-santoro-0006b86)</span>  {data-background="img/TopicModeling01.png" data-background-size="contain" data-background-repeat="no-repeat"}
+## <span style="background-color:rgba(0,0,0,.7)">What Topic Models Means for [Me](https://www.linkedin.com/in/mario-santoro-0006b86)</span>  {data-background="img/TopicModeling01.png" data-background-size="contain" data-background-repeat="no-repeat"}
 
-> - <span style="background-color:rgba(0,0,0,.5)">Topic Models can be seen as fuzzy cluster analysis applied to a _vocabulary matrix_</span>
-> - <span style="background-color:rgba(0,0,0,.5)">Using different measures/probability distributions</span>
-> - <span style="background-color:rgba(0,0,0,.5)">Topics can be seen as latent variables: we can observe only documents that contains topics with different probabilities not the topics themselves</span>
-> - <span style="background-color:rgba(0,0,0,.5)">Topics can be view as data. Can we do any statistics on Topics?</span>
+> - <span style="background-color:rgba(0,0,0,.7)">Topic Models can be seen as fuzzy cluster analysis applied to a _vocabulary matrix_</span>
+> - <span style="background-color:rgba(0,0,0,.7)">Using different measures/probability distributions</span>
+> - <span style="background-color:rgba(0,0,0,.7)">Topics can be seen as latent variables: we can observe only documents that contains topics with different probabilities not the topics themselves</span>
+> - <span style="background-color:rgba(0,0,0,.7)">Topics can be view as data. Can we do any statistics on Topics?</span>
 
 # Our Choice: Structural Topic Model (STM) {data-background="img/STM_Scheme.png" data-center="false"}
 
@@ -179,6 +181,7 @@ other applications, they have been used to find patterns in genetic data, images
 >- Topic proportion $\theta_d = (\theta_{1,d},..., \theta_{K,d})$, for each word within document d a  topic is sampled $z_{d,n_d} \sim Multinomial_K(\theta_d)$ 
 >- $w_{d,n_d}  \sim Multinomial_W(\mathbf{B}z_{d,n_d})$
  where $\mathbf{B} = f(\mathbf{Y})$
+ >- $\theta_d \sim LogisticNormal(\tilde{\mu_d}, \tilde{\Sigma})$ 
  >- $\theta_{d,k} = softmax(\eta) =\frac{\exp{(\eta_{d,k})}}{\sum_{j=1}^K \exp{(\eta_{d,j})}}$ <!--with    $\eta_{d,K}$ = 0 -->
 >- $\eta_d \sim Normal(\mu_d, \Sigma)$ with $\mu_{d,i} = X_d \beta_i$ $i=1, ..., K-1$ and $\mu_{d,K}=0$ for identifiability 
 
@@ -194,7 +197,7 @@ other applications, they have been used to find patterns in genetic data, images
 
 <!-- </aside>   -->
 
-# Bag Of Words (BOW) Recap {data-background="img/BOW_2.gif"}
+# <span style="background-color:rgba(0,0,0,.7)">Bag Of Words (BOW) Recap </span>{data-background="img/BOW_2.gif"}
 
 ## Bag Of Words (BOW) Recap {data-background="img/BOW_2.gif" data-background-position="right" data-background-size="10%"}
 
@@ -310,39 +313,44 @@ Using empirical considerations, for our corpus $\epsilon |W| = 100$
 
 <!-- ## Our Corpus {data-background="img/name_of_the_rose.gif"} -->
 
-## Our Corpus {data-background="img/livraria-lello-stairs.jpg"}
+## <span style="background-color:rgba(0,0,0,.5)"> Our Corpus </span>{data-background="img/livraria-lello-stairs.jpg"}
+
+<span style="background-color:rgba(0,0,0,.7)">
 
 +----------------+----------------+
-| Market         | \# of pages    |
+| **Market**     | \# of pages    |
 +:==============:+:==============:+
-| Nucleus        | 8902           |
+| **Nucleus**    | **8902**       |
 +----------------+----------------+
-| Alphabay       | 7472           |
+| **Alphabay**   | **7472**       |
 +----------------+----------------+
-| Crypto Market  | 2435           |
+|**Crypto        |                |
+|Market  **      | **2435**       |
 +----------------+----------------+
-| East India     | 1682           |
+| **East India** | **1682**       |
 +----------------+----------------+
-| **Total        | 20491          |
+| **Total        | **20491**      |
 | Pages**        |                |
 +----------------+----------------+
 
+</span>
 
-## <span style="background-color:rgba(0,0,0,.5)"> A Random Data Record </span>{data-background="img/alphabay.png"} 
+
+## <span style="background-color:rgba(0,0,0,.7)"> A Random Data Record </span>{data-background="img/alphabay.png"} 
 
 <small>
 
-<span style="background-color:rgba(0,0,0,.5)">
+<span style="background-color:rgba(0,0,0,.7)">
 [1] crypto <br>
 Levels: alphabay   crypto   eastindia   nucleus
 </span>
 
-<span style="background-color:rgba(0,0,0,.5)">
+<span style="background-color:rgba(0,0,0,.7)">
 [1] 2c <br>
 44 Levels: 2c   analgesics   benzodiazepines   benzos ...   xanax
 </span>
 
-<span style="background-color:rgba(0,0,0,.5)">
+<span style="background-color:rgba(0,0,0,.7)">
 [1] "bbjFeREsGErcoq5XQ2ZmBj5nNUEbrqGCAZhORVex.html"
 </span>
 
@@ -351,29 +359,29 @@ Levels: alphabay   crypto   eastindia   nucleus
 </small>
 
 
-## Running Final STM with Covariates: $K$ {data-background="img/Run_Forrest.gif"}
+## <span style="background-color:rgba(0,0,0,.7)">Running Final STM with Covariates: **$K$**</span> {data-background="img/Run_Forrest.gif"}
 
 <br><br>
 
 <small>
 
--   There is not a *true* value for $K$
+-   <span style="background-color:rgba(0,0,0,.7)">There is not a *true* value for $K$</span>
 
--   It depends on the objective of the study
+-   <span style="background-color:rgba(0,0,0,.7)">It depends on the objective of the study</span>
 
--   *searchK* function in STM use 4 different tests: exclusivity,
-    semantic coherence, heldout, and residual.
+-   <span style="background-color:rgba(0,0,0,.7)">*searchK* function in STM use 4 different tests: exclusivity,
+    semantic coherence, heldout, and residual.</span>
 
--   We used *searchK* on the set
-    $\mathcal{K} = \{40, 44, 48, 52, 56, 58, 59, 60, 61, 62, 63, 64, 65, 66, 68, 69, 70, 71\}$
+-   <span style="background-color:rgba(0,0,0,.7)">We used *searchK* on the set
+    $\mathcal{K} = \{40, 44, 48, 52, 56, 58, 59, 60, 61, 62, 63, 64, 65, 66, 68, 69, 70, 71\}$</span>
 
--   Choice of $\mathcal{K}$: to explore a relatively wide range of
-    values most of them larger than 44 (the number of categories):
+-   <span style="background-color:rgba(0,0,0,.7)">Choice of $\mathcal{K}$: to explore a relatively wide range of
+    values most of them larger than 44 (the number of categories):</span>
 
-    -   to assess the ability of Topic Modelling to (automatically)
-        produce a refined characterization of the dataset
-    -   to extract cross-category topics such as "shipment" or "drugs
-        effects"
+    -   <span style="background-color:rgba(0,0,0,.7)">to assess the ability of Topic Modelling to (automatically)
+        produce a refined characterization of the dataset</span>
+    -   <span style="background-color:rgba(0,0,0,.7)">to extract cross-category topics such as "shipment" or "drugs
+        effects"</span>
 
 </small>
 
@@ -381,12 +389,12 @@ Levels: alphabay   crypto   eastindia   nucleus
 
 ![](img/search_K.png)
 
-## Running Final STM with Covariates: $K$ {data-background="img/Run_Forrest.gif" data-background-transition="convex"}
+## <span style="background-color:rgba(0,0,0,.7)">Running Final STM with Covariates: **$K$**</span>  {data-background="img/Run_Forrest.gif" data-background-transition="convex"}
 
 ![](img/search_K.png){width="60%"}
 
-We decided to set K = 65 as it seems to provide a reasonable trade-off
-among the four metrics
+<span style="background-color:rgba(0,0,0,.7)">We decided to set K = 65 as it seems to provide a reasonable trade-off
+among the four metrics</span>
 
 #  {data-background="img/Breaking_Bad_Ice_Meth.png" data-background-transition="convex"}
 
@@ -458,26 +466,26 @@ among the four metrics
 
 ## Conclusions {data-background="img/inception_end.gif"}
 
-> -   As an exploratory approach we opted for an ad-hoc heuristic based
+> -   <span style="background-color:rgba(0,0,0,.5)">As an exploratory approach we opted for an ad-hoc heuristic based
 >     on iteratively apply standard STM to detect topic-relevant
->     term-pairs and merge them into a single extended-word
+>     term-pairs and merge them into a single extended-word</span>
 
-> -   The coherence and the intelligibility of the obtained topics were
->     significantly enhanced
+> -   <span style="background-color:rgba(0,0,0,.7)">The coherence and the intelligibility of the obtained topics were
+>     significantly enhanced</span>
 
-> -   Through a fine-grained and cross-market analysis of the thematic
+> -   <span style="background-color:rgba(0,0,0,.7)">Through a fine-grained and cross-market analysis of the thematic
 >     organization of the corpus we were able to gain relevant
 >     information about drug trade on ToR that goes well beyond those
 >     provided by the already available high level content
->     classification
+>     classification</span>
 
 ## Future Works {data-background="img/time_machine.gif"}
 
-> -   Extend the *a priori* joint distributions to the N-grams and to
->     the skip-grams <br>
-> -   Increase performances <br>
-> -   Now all is running on CPU on R -> GPU version also using R (RCuda
->     package)
+> -   <span style="background-color:rgba(0,0,0,.7)">Extend the *a priori* joint distributions to the N-grams and to
+>     the skip-grams </span><br>
+> -   <span style="background-color:rgba(0,0,0,.7)">Increase performances </span><br>
+> -   <span style="background-color:rgba(0,0,0,.7)">Now all is running on CPU on R -> GPU version also using R (RCuda
+>     package)</span>
 
 # ... this is the END {data-background="img/truman_show_end.gif"}
 
