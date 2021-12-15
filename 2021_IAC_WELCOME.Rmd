@@ -166,7 +166,27 @@ other applications, they have been used to find patterns in genetic data, images
 >     :::
 >     :::
 
-<br> <!-- <aside class="notes"> --> <!-- This is my note. -->
+<br> 
+
+## Structural Topic Model (STM) {data-background="img/STM_Scheme.png" data-background-position="bottom" data-background-size="30%"}
+
+<small>
+
+>- $d = 1,...,D$  documents, $n_d = 1, ..., N_d$ words (positions) in the document
+>- $w_{d,n_d}$ instances of unique terms from a vocabulary of terms, $w = 1,..., W$ unique words
+>- $K$ topics indexed by $k = 1, ..., K$
+>- $\mathbf{X}$ $D \times P$ prevalence covariate matrix, $\mathbf{Y}$ $D \times A$ content covariate matrix
+>- Topic proportion $\theta_d = (\theta_{1,d},..., \theta_{K,d})$, for each word within document d a  topic is sampled $z_{d,n_d} \sim Multinomial_K(\theta_d)$ 
+>- $w_{d,n_d}  \sim Multinomial_W(\mathbf{B}z_{d,n_d})$
+ where $\mathbf{B} = f(\mathbf{Y})$
+ >- $\theta_{d,k} = softmax(\eta) =\frac{\exp{(\eta_{d,k})}}{\sum_{j=1}^K \exp{(\eta_{d,j})}}$ <!--with    $\eta_{d,K}$ = 0 -->
+>- $\eta_d \sim Normal(\mu_d, \Sigma)$ with $\mu_{d,i} = X_d \beta_i$ $i=1, ..., K-1$ and $\mu_{d,K}=0$ for identifiability 
+
+</small>
+
+
+
+<!-- <aside class="notes"> --> <!-- This is my note. -->
 
 <!-- - It can contain Markdown -->
 
@@ -386,12 +406,13 @@ among the four metrics
 ![](img/crystal-meth.jpg){width="70%"}
 :::
 
+
 -   Methamphetamine was tagged only in Crypto Market with frequency of
     0.022
 
--   Using the *estimateEffect*:
+-    Estimating the effect of marketplaces in topic proportion:
 
-    -   in Nucleus (0.0218) the topic is 2 times more prevalent respect
+      - in Nucleus (0.0218) the topic is 2 times more prevalent respect
         the others (0.0114)
 
         ::: {.fragment .current-visible}
@@ -416,7 +437,7 @@ among the four metrics
     -   sativa, **chemicalscannabis_hashishbuds**, **content_thc_cbd**,
         **14g_black_diamond**
 
--   Using the *estimateEffect*:
+-   Estimating the effect of marketplaces in topic proportion:
 
     -   in East India the topic $56$ show a $30\%$ increase respect to
         the others
